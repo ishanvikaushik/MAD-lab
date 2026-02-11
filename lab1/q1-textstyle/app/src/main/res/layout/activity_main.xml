@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvJustify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This text is justified. It demonstrates how text alignment works in Android layouts for long paragraphs."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This text is RED"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bold Italic Text"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Different Font Style"
+            android:fontFamily="sans-serif-monospace"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

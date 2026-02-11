@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Movie Ticket Booking</string>
+
+    <string-array name="movies">
+        <item>Select Movie</item>
+        <item>Inception</item>
+        <item>Interstellar</item>
+        <item>Avengers</item>
+        <item>Joker</item>
+    </string-array>
+
+    <string-array name="theatres">
+        <item>Select Theatre</item>
+        <item>PVR Cinemas</item>
+        <item>INOX</item>
+        <item>Cinepolis</item>
+    </string-array>
+</resources>

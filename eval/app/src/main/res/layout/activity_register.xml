@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etName"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cbAge"
+            android:text="Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmail"
+            android:layout_marginTop="12dp"/>
+
+        <CheckBox
+            android:id="@+id/cbFood"
+            android:text="Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbAge"/>
+
+        <CheckBox
+            android:id="@+id/cbCert"
+            android:text="Certification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbFood"/>
+
+        <ToggleButton
+            android:id="@+id/toggleNotify"
+            android:textOn="Notify ON"
+            android:textOff="Notify OFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbCert"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:text="Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toggleNotify"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+
+</ScrollView>

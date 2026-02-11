@@ -1,0 +1,35 @@
+package com.example.layouts;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.fragment.app.Fragment;
+
+public class TabFragment extends Fragment {
+
+    public static TabFragment newInstance(String text) {
+        TabFragment fragment = new TabFragment();
+        Bundle b = new Bundle();
+        b.putString("text", text);
+        fragment.setArguments(b);
+        return fragment;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater,
+                             ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_tab, container, false);
+
+        TextView tv = view.findViewById(R.id.tabText);
+        tv.setText(getArguments().getString("text"));
+
+        return view;
+    }
+
+}
+
+

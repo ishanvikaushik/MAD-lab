@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F2F4F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <TextView
+            android:text="Travel Ticket Booking"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Source"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/cities"
+                android:spinnerMode="dialog"/>
+
+            <TextView
+                android:text="Destination"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/cities"
+                android:spinnerMode="dialog"/>
+
+            <TextView
+                android:text="Travel Date"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ToggleButton
+                android:id="@+id/toggleTrip"
+                android:textOn="Round Trip"
+                android:textOff="One Way"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:text="Submit"
+                    android:textColor="#FFFFFF"
+                    android:background="#1A237E"
+                    android:layout_marginEnd="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:text="Reset"
+                    android:textColor="#FFFFFF"
+                    android:background="#546E7A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

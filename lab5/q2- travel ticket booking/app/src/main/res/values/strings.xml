@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Travel Ticket Booking</string>
+
+    <string-array name="cities">
+        <item>Select City</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Kolkata</item>
+    </string-array>
+</resources>
