@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.FitnessCentre" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+
+    <style name="Theme.FitnessCentre" parent="Base.Theme.FitnessCentre" />
+
+</resources>

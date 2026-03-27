@@ -1,0 +1,30 @@
+PROJECT CREATION GUIDE: MY MENU APPLICATION
+
+This document explains the step-by-step creation of the 'My Menu' Android application.
+
+1. Layout Design (activity_main.xml):
+   - We modified the default layout to include an ImageView with the ID 'displayImageView'.
+   - This ImageView is centered on the screen and is used to display the image corresponding to the menu selection.
+
+2. Menu Resource (res/menu/main_menu.xml):
+   - We created a new 'menu' directory under 'res' and added 'main_menu.xml'.
+   - Inside this file, we defined a menu item with the title "My Menu" and an icon.
+   - Using a nested <menu> tag, we created a submenu containing two items: "Image -1" and "Image -2".
+   - We used 'app:showAsAction="always"' to ensure the icon appears in the App Bar.
+
+3. Logic Implementation (MainActivity.java):
+   - We initialized the ImageView in the 'onCreate' method.
+   - We overridden 'onCreateOptionsMenu' to inflate (load) our custom menu into the activity's Action Bar.
+   - We overridden 'onOptionsItemSelected' to handle clicks.
+   - When "Image -1" is clicked:
+     - The ImageView updates to show a specific icon (using Android's built-in system icons for this demo).
+     - A Toast message "Image -1 Selected" is displayed.
+   - When "Image -2" is clicked:
+     - The ImageView updates to show a different icon.
+     - A Toast message "Image -2 Selected" is displayed.
+
+How to Run:
+1. Sync the project with Gradle files.
+2. Run the app on an emulator or a physical device.
+3. Click on the icon in the top App Bar to see the "My Menu" options.
+4. Select an image item and observe the changes on the screen and the Toast message.

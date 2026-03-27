@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menu resource for filtering and sorting -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Filter menu containing submenus for Search, Highlight, and Sort -->
+    <item
+        android:id="@+id/action_filter"
+        android:title="Filter"
+        app:showAsAction="never">
+        <menu>
+            <!-- Search Keyword submenu -->
+            <item
+                android:id="@+id/submenu_search"
+                android:title="Search Keywords" />
+
+            <!-- Highlight submenu -->
+            <item
+                android:id="@+id/submenu_highlight"
+                android:title="Highlight" />
+
+            <!-- Sort content submenu -->
+            <item
+                android:id="@+id/submenu_sort"
+                android:title="Sort">
+                <menu>
+                    <!-- Alphabetical sort option -->
+                    <item
+                        android:id="@+id/sort_alphabetical"
+                        android:title="Alphabetically" />
+                    <!-- Relevance sort option -->
+                    <item
+                        android:id="@+id/sort_relevance"
+                        android:title="By Relevance" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>

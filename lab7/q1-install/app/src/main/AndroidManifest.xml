@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    The Android Manifest file is the "blueprint" of your application. 
+    It defines permissions, hardware requirements, and all Activities 
+    (screens) that make up your app.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 
+        Android 11 (API 30) introduced package visibility restrictions.
+        To see other installed apps on the device, you MUST declare this permission.
+        'tools:ignore' is used because Google Play has strict policies on using this 
+        permission unless it's a core feature of your app (like an app manager).
+    -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Install">
+        
+        <!-- 
+            AppDetailsActivity: Shows specific info about an app.
+            exported="false" means this screen cannot be opened by other apps, 
+            only by our own application.
+        -->
+        <activity
+            android:name=".AppDetailsActivity"
+            android:exported="false" />
+            
+        <!-- 
+            MainActivity: The screen that launches when you tap the app icon.
+            exported="true" and the intent-filter below define it as the 
+            entry point (LAUNCHER).
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
